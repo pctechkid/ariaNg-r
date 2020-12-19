@@ -30,18 +30,18 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form p-l-55 p-r-55 p-t-178" onsubmit="return validate()" action ="dashboard.html" method="post">
+				<form class="login100-form validate-form p-l-55 p-r-55 p-t-178" onsubmit="return validate()" action ="dashboard.html">
 					<span class="login100-form-title">
 						<img src="images/icons/logo.png" style="height:50%; width:50%;">
 					</span>
 
 					<div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
-						<input class="input100" type="text" name="username" placeholder="Username" id="username">
+						<input class="input100" type="text" placeholder="Username" id="username">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Please enter password">
-						<input class="input100" type="password" name="pass" placeholder="Password" id="password">
+						<input class="input100" type="password" placeholder="Password" id="password">
 						<span class="focus-input100"></span>
 					</div>
 
@@ -87,7 +87,7 @@
 		if(username=="ronnel"&& password=="iamronnel")
 		{
 			alert("Logged in successfully!");
-			window.location.href('dashboard.html');
+			location.replace('dashboard.html');
 			return true;
 
 		}
